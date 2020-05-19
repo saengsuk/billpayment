@@ -73,6 +73,27 @@ End Sub
 
 Sub ChangeTermFormat()
 
+'2020 - 2021
+
+Columns("N:N").Select
+Selection.Replace What:="1 Year/2020-21", Replacement:="'1002020", LookAt _
+        :=xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+Selection.Replace What:="1st2020-21", Replacement:="'1012020", LookAt _
+        :=xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+Selection.Replace What:="2nd2020-21", Replacement:="'1022020", LookAt _
+        :=xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+        
+Selection.Replace What:="Jap 1/2020", Replacement:="'2012020", LookAt _
+        :=xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+Selection.Replace What:="Jap 2/2020", Replacement:="'2022020", LookAt _
+        :=xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False
+
+
 '2019 - 2020
 
 Columns("N:N").Select
